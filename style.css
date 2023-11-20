@@ -17,7 +17,7 @@
 
            h1 {
                 text-shadow:2px2px;        
-            font-size:42px;
+            font-size:28px;
             margin:10px;
             padding-width:20px;
         }
@@ -29,9 +29,9 @@
 
         .tab {
             background-color:#FED8B1;
-            border-radius: 10px;
-            padding: 15px 30px;
-            margin: 10px;
+            border-radius:10px;
+            padding:15px 30px;
+            margin:10px;
             flex-direction:column;
             display:flex;
             font-size: 25px;
@@ -39,7 +39,7 @@
             text-decoration:none;
             color: #333;
 	    font-family: 'Poppins', sans-serif;
-            font-weight:500
+            font-weight:500;
            
         }
 
