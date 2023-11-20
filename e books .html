@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My eBooks</title>
+    <style>
+        /* Styling for tabs */
+        .tab-container {
+            display: flex;
+            flex-direction: column;
+            max-width:1500px;
+        }
+
+        .tab {
+            background-color: #FED8B1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family:Montserrat;
+            cursor: pointer;
+        }
+
+        .tab:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Hide content initially */
+        .tab-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab" onclick="showTab('ebook1')">DETAILED INDIAN GEOGRAPHY </div>
+        <div class="tab" onclick="showTab('ebook2')">DETAILED INDIAN ECONOMY</div>
+        <div class="tab" onclick="showTab('ebook3')">WORLD POLITICS</div>
+        <div class="tab" onclick="showTab('ebook4')">EDUCATIONAL REFORMS</div>
+        <div class="tab" onclick="showTab('ebook5')">ECONOMIC REFORMS</div>
+        <div class="tab" onclick="showTab('ebook6')">WHY LEGAL TENDER$ </div>
+        <div class="tab" onclick="showTab('ebook7')">DEVLOPMENT OR DESOLATION</div>
+        <div class="tab" onclick="showTab('ebook8')">HOW TO BE TOP 1%</div>
+        <div class="tab" onclick="showTab('ebook9')">AN INQUIRY INTO INDIC WEALTH</div>
+        <div class="tab" onclick="showTab('ebook10')">WIN THE MARATHON </div>
+    </div>
+
+    <!-- Content for each tab -->
+    <div class="tab-content" id="ebook1">
+        <!-- Add content for Ebook 1 here -->
+        <a href="#">Link to Ebook 1</a>
+    </div>
+    <div class="tab-content" id="ebook2">
+        <!-- Add content for Ebook 2 here -->
+        <a href="#">Link to Ebook 2</a>
+    </div>
+    <div class="tab-content" id="ebook3">
+        <!-- Add content for Ebook 3 here -->
+        <a href="#">Link to Ebook 3</a>
+    </div>
+    <div class="tab-content" id="ebook4">
+        <!-- Add content for Ebook 4 here -->
+        <a href="#">Link to Ebook 4</a>
+    </div>
+    <div class="tab-content" id="ebook5">
+        <!-- Add content for Ebook 5 here -->
+        <a href="#">Link to Ebook 5</a>
+    </div>
+    <div class="tab-content" id="ebook6">
+        <!-- Add content for Ebook 6 here -->
+        <a href="#">Link to Ebook 6</a>
+    </div>
+    <div class="tab-content" id="ebook7">
+        <!-- Add content for Ebook 7 here -->
+        <a href="#">Link to Ebook 7</a>
+    </div>
+    <div class="tab-content" id="ebook8">
+        <!-- Add content for Ebook 8 here -->
+        <a href="#">Link to Ebook 8</a>
+    </div>
+    <div class="tab-content" id="ebook9">
+        <!-- Add content for Ebook 9 here -->
+        <a href="#">Link to Ebook 9</a>
+    </div>
+    <div class="tab-content" id="ebook10">
+        <!-- Add content for Ebook 10 here -->
+        <a href="#">Link to Ebook 10</a>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Show the selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

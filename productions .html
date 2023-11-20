@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My eBooks</title>
+    <style>
+        /* Styling for tabs */
+        .tab-container {
+            display: flex;
+            flex-direction: column;
+            max-width:1500px;
+        }
+
+        .tab {
+            background-color: #FED8B1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family:Montserrat;
+            cursor: pointer;
+        }
+
+        .tab:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Hide content initially */
+        .tab-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab" onclick="showTab('1')">1 </div>
+        <div class="tab" onclick="showTab('2')">2</div>
+        <div class="tab" onclick="showTab('3')">3</div>
+        <div class="tab" onclick="showTab('4')">4</div>
+        <div class="tab" onclick="showTab('5')">5</div>
+        <div class="tab" onclick="showTab('6')">6 </div>
+        <div class="tab" onclick="showTab('7')">7</div>
+        <div class="tab" onclick="showTab('8')">8</div>
+        <div class="tab" onclick="showTab('9')">9</div>
+        <div class="tab" onclick="showTab('10')">10 </div>
+    </div>
+
+    <!-- Content for each tab -->
+    <div class="tab-content" id="ebook1">
+        <!-- Add content for  1 here -->
+        <a href="#">Link to  1</a>
+    </div>
+    <div class="tab-content" id="ebook2">
+        <!-- Add content for  2 here -->
+        <a href="#">Link to  2</a>
+    </div>
+    <div class="tab-content" id="ebook3">
+        <!-- Add content for  3 here -->
+        <a href="#">Link to  3</a>
+    </div>
+    <div class="tab-content" id="ebook4">
+        <!-- Add content for  4 here -->
+        <a href="#">Link to  4</a>
+    </div>
+    <div class="tab-content" id="ebook5">
+        <!-- Add content for  5 here -->
+        <a href="#">Link to  5</a>
+    </div>
+    <div class="tab-content" id="ebook6">
+        <!-- Add content for  6 here -->
+        <a href="#">Link to  6</a>
+    </div>
+    <div class="tab-content" id="ebook7">
+        <!-- Add content for  7 here -->
+        <a href="#">Link to  7</a>
+    </div>
+    <div class="tab-content" id="ebook8">
+        <!-- Add content for  8 here -->
+        <a href="#">Link to  8</a>
+    </div>
+    <div class="tab-content" id="ebook9">
+        <!-- Add content for  9 here -->
+        <a href="#">Link to  9</a>
+    </div>
+    <div class="tab-content" id="ebook10">
+        <!-- Add content for  10 here -->
+        <a href="#">Link to  10</a>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Show the selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
